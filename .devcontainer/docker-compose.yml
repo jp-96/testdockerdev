@@ -7,11 +7,11 @@ services:
     volumes:
       - junari-odoo-data:/opt/odoo/data
       # - junari-odoo-vscode:/opt/odoo/.vscode
-      - ../.vscode:/opt/odoo/.vscode
+      - ../.vscode:/opt/odoo/.vscode:cached
       # - junari-odoo-custom-addons:/opt/odoo/custom_addons
-      - ../custom_addons:/opt/odoo/custom_addons
+      - ../custom_addons:/opt/odoo/custom_addons:cached
       - junari-odoo-home:/home/odoo
-      - ..:/opt/odoo/workspace
+      - ..:/opt/odoo/workspace:cached
     env_file:
       - odoo.env
     depends_on: 
