@@ -9,9 +9,8 @@ services:
       # - junari-odoo-vscode:/opt/odoo/.vscode
       - ../.vscode:/opt/odoo/.vscode:cached
       # - junari-odoo-custom-addons:/opt/odoo/custom_addons
-      - ../custom_addons:/opt/odoo/custom_addons:cached
+      - ..:/opt/odoo/custom_addons:cached
       - junari-odoo-home:/home/odoo
-      - ..:/workspace:cached
     env_file:
       - odoo.env
     depends_on: 

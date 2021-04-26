@@ -1,7 +1,7 @@
 {
     'name': 'Contact Widgets Module',
     'version': '13.0.0',
-    'summary': 'Test Module',
+    'summary': 'Sample Module',
     'author': 'My Company Ltd',
     'website': 'https://www.mycompany.com',
     'depends': [
