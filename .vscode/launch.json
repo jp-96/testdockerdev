@@ -9,8 +9,8 @@
             "name": "Odoo",
             "type": "python",
             "request": "launch",
-            "cwd": "${workspaceRoot}",
-            "program": "${workspaceRoot}/odoo/odoo-bin",
+            "cwd": "/opt/odoo",
+            "program": "/opt/odoo/odoo/odoo-bin",
             "args": [
                 "--db_host=${env:DB_HOST}",
                 "--db_port=${env:DB_PORT}",
