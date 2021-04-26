@@ -11,7 +11,7 @@ services:
       # - junari-odoo-custom-addons:/opt/odoo/custom_addons
       - ../custom_addons:/opt/odoo/custom_addons:cached
       - junari-odoo-home:/home/odoo
-      - ..:/opt/odoo/workspace:cached
+      - ..:/workspace:cached
     env_file:
       - odoo.env
     depends_on: 
