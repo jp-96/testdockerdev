@@ -18,6 +18,8 @@ services:
       - db
     command: bash
     tty: true
+    working_dir: /workspace
+
   db:
     image: postgres:11
     environment:
